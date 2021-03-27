@@ -1,0 +1,3 @@
+[submodule "CS4341-projects"]
+	path = CS4341-projects
+	url = https://github.com/NESTLab/CS4341-projects.git
