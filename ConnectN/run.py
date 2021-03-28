@@ -3,17 +3,29 @@ import game
 import agent
 import alpha_beta_agent as aba
 
+from GamarraNikolas.alpha_beta_agent import THE_AGENT as GamarraNikolas
+from GamarraNikolas2.alpha_beta_agent import THE_AGENT as GamarraNikolas2
+
+from LessardPhilippe.alpha_beta_agent import THE_AGENT as LessardPhilippe
+from GumiennyKamil.alpha_beta_agent import THE_AGENT as GumiennyKamil
+
 # Set random seed for reproducibility
 random.seed(1)
 
+
+g = game.Game(7,  # width
+              6,  # height
+              4,  # tokens in a row to win
+              LessardPhilippe,  # player 1
+              GamarraNikolas)       # player 2
 #
 # Random vs. Random
 #
-g = game.Game(7, # width
-              6, # height
-              4, # tokens in a row to win
-              agent.RandomAgent("random1"),       # player 1
-              agent.RandomAgent("random2"))       # player 2
+# g = game.Game(7, # width
+#               6, # height
+#               4, # tokens in a row to win
+#               agent.RandomAgent("random1"),       # player 1
+#               agent.RandomAgent("random2"))       # player 2
 
 #
 # Human vs. Random
