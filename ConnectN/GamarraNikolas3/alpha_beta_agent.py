@@ -5,6 +5,7 @@ from agent import Agent
 from board import Board
 from . import heuristic
 
+import LessardPhilippe.alpha_beta_agent
 
 # from . import Heuristic
 
@@ -158,4 +159,4 @@ class AlphaBetaAgent(Agent):
         return succ
 
 
-THE_AGENT = AlphaBetaAgent("GamarraNikolas2", 4)
+THE_AGENT = AlphaBetaAgent("GamarraNikolas3", 4)

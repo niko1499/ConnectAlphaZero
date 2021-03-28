@@ -2,6 +2,11 @@ import random
 import game
 import agent
 import alpha_beta_agent as aba
+from GamarraNikolas.alpha_beta_agent import THE_AGENT as GamarraNikolas
+from GamarraNikolas2.alpha_beta_agent import THE_AGENT as GamarraNikolas2
+from GamarraNikolas3.alpha_beta_agent import THE_AGENT as GamarraNikolas3
+from LessardPhilippe.alpha_beta_agent import THE_AGENT as LessardPhilippe
+from GumiennyKamil.alpha_beta_agent import THE_AGENT as GumiennyKamil
 
 ######################
 # Play a single game #
@@ -104,12 +109,21 @@ def play_tournament(w, h, n, l, ps):
 random.seed(1)
 
 # Construct list of agents in the tournament
+# agents = [
+#     # aba.AlphaBetaAgent("aba", 4),
+#     agent.RandomAgent("random1"),
+#     agent.RandomAgent("random2"),
+#     agent.RandomAgent("random3"),
+#     agent.RandomAgent("random4")
+# ]
+
 agents = [
     # aba.AlphaBetaAgent("aba", 4),
-    agent.RandomAgent("random1"),
-    agent.RandomAgent("random2"),
-    agent.RandomAgent("random3"),
-    agent.RandomAgent("random4")
+    GamarraNikolas,
+    GamarraNikolas2,
+    GamarraNikolas3,
+    LessardPhilippe,
+    GumiennyKamil
 ]
 
 # Run!

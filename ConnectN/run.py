@@ -5,6 +5,7 @@ import alpha_beta_agent as aba
 
 from GamarraNikolas.alpha_beta_agent import THE_AGENT as GamarraNikolas
 from GamarraNikolas2.alpha_beta_agent import THE_AGENT as GamarraNikolas2
+from GamarraNikolas3.alpha_beta_agent import THE_AGENT as GamarraNikolas3
 
 from LessardPhilippe.alpha_beta_agent import THE_AGENT as LessardPhilippe
 from GumiennyKamil.alpha_beta_agent import THE_AGENT as GumiennyKamil
@@ -16,8 +17,8 @@ random.seed(1)
 g = game.Game(7,  # width
               6,  # height
               4,  # tokens in a row to win
-              LessardPhilippe,  # player 1
-              GamarraNikolas)       # player 2
+              GamarraNikolas2,  # player 1
+              GamarraNikolas3)       # player 2
 #
 # Random vs. Random
 #
