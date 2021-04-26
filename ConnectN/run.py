@@ -17,8 +17,8 @@ random.seed(1)
 g = game.Game(7,  # width
               6,  # height
               4,  # tokens in a row to win
-              GamarraNikolas2,  # player 1
-              GamarraNikolas3)       # player 2
+              LessardPhilippe,  # player 1
+              GamarraNikolas)       # player 2
 #
 # Random vs. Random
 #
