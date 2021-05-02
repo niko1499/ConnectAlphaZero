@@ -41,7 +41,7 @@ class AlphaZeroAgent(Agent):
     def go(self, brd):  # main routine invoked by game simulator
 
         player = brd.player  # get our player number
-        top_node = MCTS.Heuristic((brd, -1), player)  # create top node of tree
+        top_node = MCTS.run((brd, -1), player)  # create top node of tree
         hu = self.create_heuristic(top_node, self.max_depth, player)  # recursively build tree
 
         policy = get_policy(brd, t) # Ask our saved neural net the optimal choice
